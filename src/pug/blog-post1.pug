@@ -1,0 +1,101 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Modern Business - Start Bootstrap Template
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5.my-5
+
+                    .row.gx-5
+
+                        .col-lg-3
+                            .d-flex.align-items-center.mt-lg-5.mb-4
+                                img.img-fluid.rounded-circle(src='../assets/profile2.png', alt='...')
+                                .ms-3
+                                    .fw-bold appleFUN
+                                    .text-muted Jul 19, 2024
+
+                        .col-lg-9
+
+                            // Post content
+                            article
+
+                                // Post header
+                                header.mb-4
+
+                                    // Post title
+                                    h1.fw-bolder.mb-1 Virtual Idol AppleTea’s Birthday Celebration on July 19
+
+                                    // Post meta content
+                                    .text-muted.fst-italic.mb-2 Jul 19, 2024
+
+                                    // Post categories
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') News
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') Appletea
+
+                                // Preview image figure
+                                figure.mb-4
+                                    img.img-fluid.rounded(src='../assets/appletea.png', alt='...')
+
+                                // Post content
+                                section.mb-5
+
+                                    p.fs-5.mb-4 AppleTea, DimenCreat’s beloved virtual idol, celebrated her birthday on July 19 with a spectacular online event that brought fans together from all over the world. 
+                                    p.fs-5.mb-4 The celebration featured exclusive performances by AppleTea, heartfelt messages from her supporters, and the release of limited-edition merchandise. 
+                                    p.fs-5.mb-4 The event created a vibrant atmosphere where fans could interact, share their love for AppleTea, and be part of a memorable experience. It was a true testament to the strong bond between AppleTea and her dedicated community, highlighting her role as a cherished figure in the virtual idol world.
+                                    
+
+                            // Comments section
+                            section
+                                .card.bg-light
+                                    .card-body
+
+                                        // Comment form
+                                        form.mb-4
+                                            textarea.form-control(rows='3', placeholder='Join the discussion and leave a comment!')
+
+                                        // Comment with nested comments
+                                        .d-flex.mb-4
+
+                                            // Parent comment
+                                            .flex-shrink-0
+                                                img.rounded-circle(src='../assets/profile4.png', alt='...')
+                                            .ms-3
+                                                .fw-bold DimenSupport
+                                                | Beep boop! This is absolutely amazing!🤖
+                                        
+                                                // Child comment 1
+                                                .d-flex.mt-4
+                                                    .flex-shrink-0
+                                                        img.rounded-circle(src='../assets/profile2.png', alt='...')
+                                                    .ms-3
+                                                        .fw-bold AppleFun
+                                                        | Have fun with apple tea!!!
+
+                                                
+                                       
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

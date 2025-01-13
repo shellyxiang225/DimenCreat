@@ -1,0 +1,86 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title DimenCreat
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Header
+            header.py-5
+                .container.px-5
+                    .row.justify-content-center
+                        .col-lg-8.col-xxl-6
+                            .text-center.my-5
+                                h1.fw-bolder.mb-3 Our mission is to connect anime enthusiasts everywhere.
+                                p.lead.fw-normal.text-muted.mb-4 DimenCreat was created to bring anime fans, creators, and communities together in one place. 
+
+            // About section one
+            section.py-5.bg-light#scroll-target
+                .container.px-5.my-5
+
+                    .row.gx-5.align-items-center
+                        .col-lg-6
+                            img.img-fluid.rounded.mb-5.mb-lg-0(src='../assets/colleague.png', alt='...')
+                        .col-lg-6
+                            h2.fw-bolder Our Beginning
+                            p.lead.fw-normal.text-muted.mb-0 DimenCreat began as an anime club formed by passionate students from the English Department of Hangzhou Dianzi University, united by a shared dream to create a borderless platform for anime lovers around the world. From its beginnings as a university club, DimenCreat has grown into a thriving space where fans, creators, and dreamers connect, driven by passion, creativity, and the spirit of collaboration.
+
+            // About section two
+            section.py-5
+                .container.px-5.my-5
+
+                    .row.gx-5.align-items-center
+                        .col-lg-6.order-first.order-lg-last
+                            img.img-fluid.rounded.mb-5.mb-lg-0(src='../assets/colleagu.png', alt='...')
+                        .col-lg-6
+                            h2.fw-bolder Growth &amp; beyond
+                            p.lead.fw-normal.text-muted.mb-0 Starting as a small team of 15, DimenCreat has grown into a dynamic organization with over 52 members. Beyond our base in Hangzhou, we’ve established small offices in Osaka and Busan, allowing us to stay at the forefront of anime trends. These offices enable us to provide our users with the latest updates and insights, ensuring they remain connected to the ever-evolving world of anime.
+            // Team members section
+            section.py-5.bg-light
+                .container.px-5.my-5
+                    .text-center
+                        h2.fw-bolder Our team
+                        p.lead.fw-normal.text-muted.mb-5 Dedicated to quality and your success
+                    .row.gx-5.row-cols-1.row-cols-sm-2.row-cols-xl-4.justify-content-center
+                        .col.mb-5.mb-5.mb-xl-0
+                            .text-center
+                                img.img-fluid.rounded-circle.mb-4.px-4(src='../assets/CEO.png', alt='...')
+                                h5.fw-bolder Li Xiaohe
+                                .fst-italic.text-muted Founder &amp; CEO
+                        .col.mb-5.mb-5.mb-xl-0
+                            .text-center
+                                img.img-fluid.rounded-circle.mb-4.px-4(src='../assets/OPE.png', alt='...')
+                                h5.fw-bolder Akiko
+                                .fst-italic.text-muted Creative Director
+                        .col.mb-5.mb-5.mb-sm-0
+                            .text-center
+                                img.img-fluid.rounded-circle.mb-4.px-4(src='../assets/CTO.png', alt='...')
+                                h5.fw-bolder Wang Anyu
+                                .fst-italic.text-muted Accounting Manager
+                        .col.mb-5
+                            .text-center
+                                img.img-fluid.rounded-circle.mb-4.px-4(src='../assets/CFO.png', alt='...')
+                                h5.fw-bolder Zhang Ning
+                                .fst-italic.text-muted Event Organizer
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

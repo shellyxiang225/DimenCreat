@@ -1,0 +1,152 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title DimenCreat
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5
+
+                    h1.fw-bolder.fs-5.mb-4 DimenCreat Blog
+
+                    .card.border-0.shadow.rounded-3.overflow-hidden
+                        .card-body.p-0
+                            .row.gx-0
+                                .col-lg-6.col-xl-5.py-lg-5
+                                    .p-4.p-md-5
+                                        .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
+                                        .h2.fw-bolder Virtual Idol AppleTea’s Birthday Celebration on July 19
+                                        p AppleTea, DimenCreat’s beloved virtual idol, celebrated her birthday on July 19 with a spectacular online event.
+                                        a.stretched-link.text-decoration-none(href='blog-post1.html')
+                                            | Read more
+                                            i.bi.bi-arrow-right
+                                .col-lg-6.col-xl-7
+                                    .bg-featured-blog(style='background-image: url("../assets/appletea.png");')
+
+            section.py-5.bg-light
+                .container.px-5
+                    .row.gx-5
+                        .col-xl-8
+                            h2.fw-bolder.fs-5.mb-4 News
+                            // News item
+                            .mb-4
+                                .small.text-muted Agu 17, 2024 
+                                a.link-dark(href='blog-post.html')
+                                    h3 DimenCreat Employees Attend CP20 Anime Expo
+                            // News item
+                            .mb-5
+                                .small.text-muted Jul 19, 2024 
+                                a.link-dark(href='blog-post1.html')
+                                    h3 Virtual Idol AppleTea’s Birthday Celebration on July 19
+                            // News item
+                            .mb-5
+                                .small.text-muted 
+                                a.link-dark(href='blog-post2.html')
+                                    h3 NekoTalk Launches User Reward Platform
+                            .text-end.mb-5.mb-xl-0
+                                a.text-decoration-none(href='blog-post.html')
+                                    | More news
+                                    i.bi.bi-arrow-right
+                        .col-xl-4
+                            .card.border-0.h-100
+                                .card-body.p-4
+                                    .d-flex.h-100.align-items-center.justify-content-center
+                                        .text-center
+                                            .h6.fw-bolder Contact
+                                            p.text-muted.mb-4
+                                                | For more information, email us at
+                                                br
+                                                a(href='#!') press@domain.com
+                                            .h6.fw-bolder Follow us
+                                            a.fs-5.px-2.link-dark(href='#!')
+                                                i.bi-twitter
+                                            a.fs-5.px-2.link-dark(href='#!')
+                                                i.bi-facebook
+                                            a.fs-5.px-2.link-dark(href='#!')
+                                                i.bi-linkedin
+                                            a.fs-5.px-2.link-dark(href='#!')
+                                                i.bi-youtube
+                                            
+
+            // Blog preview section
+            section.py-5
+                .container.px-5
+                    h2.fw-bolder.fs-5.mb-4 From our News
+                    .row.gx-5
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='../assets/anime.jpg', alt='...')
+                                .card-body.p-4
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
+                                    a.text-decoration-none.link-dark.stretched-link(href='blog-post.html')
+                                        .h5.card-title.mb-3 DimenCreat Employees Attend CP20 Anime Expo
+                                    p.card-text.mb-0
+                                        | We recently participated in the CP20 Anime Expo, a premier event that brings together anime enthusiasts, creators, and industry leaders. 
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            img.rounded-circle.me-3(src='../assets/profile.png', alt='...')
+                                            .small
+                                                .fw-bold MeowDimen
+                                                .text-muted Agu 17, 2024 
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='../assets/appletea.png', alt='...')
+                                .card-body.p-4
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
+                                    a.text-decoration-none.link-dark.stretched-link(href='blog-post1.html')
+                                        h5.card-title.mb-3 Virtual Idol AppleTea’s Birthday Celebration on July 19
+                                    p.card-text.mb-0
+                                        | AppleTea, DimenCreat’s beloved virtual idol, celebrated her birthday on July 19 with a spectacular online event.
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            img.rounded-circle.me-3(src='../assets/profile2.png', alt='...')
+                                            .small
+                                                .fw-bold appleFUN
+                                                .text-muted Jul 19, 2024 
+                        .col-lg-4.mb-5
+                            .card.h-100.shadow.border-0
+                                img.card-img-top(src='../assets/profile3.png', alt='...')
+                                .card-body.p-4
+                                    .badge.bg-primary.bg-gradient.rounded-pill.mb-2 News
+                                    a.text-decoration-none.link-dark.stretched-link(href='blog-post2.html')
+                                        h5.card-title.mb-3 NekoTalk Launches User Reward Platform
+                                    p.card-text.mb-0
+                                        | NekoTalk introduces its new User Reward Platform, allowing fans to earn points and exclusive perks by engaging with content and participating in community activities. 
+                                .card-footer.p-4.pt-0.bg-transparent.border-top-0
+                                    .d-flex.align-items-end.justify-content-between
+                                        .d-flex.align-items-center
+                                            img.rounded-circle.me-3(src='../assets/profile4.png', alt='...')
+                                            .small
+                                                .fw-bold DimenSupport
+                                                .text-muted April 2, 2023
+
+                    .text-end.mb-5.mb-xl-0
+                        a.text-decoration-none(href='#!')
+                            | More stories
+                            i.bi.bi-arrow-right
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

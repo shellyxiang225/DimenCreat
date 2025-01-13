@@ -1,0 +1,92 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title DimenCreat
+
+        // Favicon
+        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
+
+        include includes/css.pug
+
+    body.d-flex.flex-column
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            section.py-5
+                .container.px-5.my-5
+
+                    .row.gx-5
+
+                        .col-lg-3
+                            .d-flex.align-items-center.mt-lg-5.mb-4
+                                img.img-fluid.rounded-circle(src='../assets/profile.png', alt='...')
+                                .ms-3
+                                    .fw-bold MeowDimen
+                                    .text-muted News, Business
+
+                        .col-lg-9
+
+                            // Post content
+                            article
+
+                                // Post header
+                                header.mb-4
+
+                                    // Post title
+                                    h1.fw-bolder.mb-1 Employees Attend CP20 Anime Expo
+
+                                    // Post meta content
+                                    .text-muted.fst-italic.mb-2 Agu 17, 2024
+
+                                    // Post categories
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') News
+                                    a.badge.bg-secondary.text-decoration-none.link-light(href='#!') About Dimen
+
+                                // Preview image figure
+                                figure.mb-4
+                                    img.img-fluid.rounded(src='../assets/anime.jpg', alt='...')
+
+                                // Post content
+                                section.mb-5
+
+                                    p.fs-5.mb-4 We recently participated in the CP20 Anime Expo, a premier event that brings together anime enthusiasts, creators, and industry leaders.
+                                    p.fs-5.mb-4 During the expo, our team actively engaged with fans, showcased innovative projects such as NekoTalk and AppleTea, and highlighted our commitment to promoting anime culture.
+                                    p.fs-5.mb-4 This participation not only strengthened our connection with the anime community but also demonstrated our dedication to building a global platform where fans and creators can collaborate and grow together.
+                                    
+
+                            // Comments section
+                            section
+                                .card.bg-light
+                                    .card-body
+
+                                        // Comment form
+                                        form.mb-4
+                                            textarea.form-control(rows='3', placeholder='Join the discussion and leave a comment!')
+
+                                        // Comment with nested comments
+                                        .d-flex.mb-4
+
+
+                                        // Single comment
+                                        .d-flex
+                                            .flex-shrink-0
+                                                img.rounded-circle(src='assets/profile4.png', alt='...')
+                                            .ms-3
+                                                .fw-bold DimenSupport
+                                                | Beep boop! This is absolutely amazing!🤖
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug
